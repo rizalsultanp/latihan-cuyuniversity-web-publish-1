@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sesi 2 | Create a Free Website Until Publish | CUY UNIVERSITY</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img class="logo-img" src="assets/partner.png" alt="logo">
+            <h1 class="logo-title">Rizal</h1>
+        </div>
+        <ul>
+            <li><a href="#jasa">Jasa</a></li>
+            <li><a href="mailto:rizalsultan.rs@gmail.com">Kontak</a></li>
+        </ul>
+        <button class="btn-follow" id="btn-follow-me">Follow me!</button>
+    </nav>
+
+    <div class="container">
+        <div class="intro">
+            <p class="title">Hello, I'am Here</p>
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, maxime.</p>
+            <img class="img-foto" src="assets/foto/1.jpg" alt="foto berasal dari unplash">
+        </div>
+    </div>
+
+    <div class="parallax">
+        <div class="about">
+            <p class="title">I'am a Programmer</p>
+            <p class="description">Lorem ipsum dolor sit amet.</p>
+            <div class="btn-kerja-sama">
+                <button class="btn-kerja-sama" id="btn-kerja-sama">Kerja sama</button>
+            </div>
+        </div>
+        <div class="container" id="jasa">
+            <div class="card">
+                <div class="card-item">
+                    <img class="icon" src="assets/24-hours.png" alt="icon1">
+                    <p class="card-title">Siap melayani kapanpun</p>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur,
+                        eius.</p>
+                </div>
+                <div class="card-item">
+                    <img class="icon" src="assets/hot-deal.png" alt="icon2">
+                    <p class="card-title">Aman Dompet Dan Terjangkau</p>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, saepe!
+                    </p>
+                </div>
+                <div class="card-item">
+                    <img class="icon" src="assets/rating.png" alt="icon3">
+                    <p class="card-title">246 Review</p>
+                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+                        voluptate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="title">&copy; Rizal Sultan Purnama 2023</p>
+    </footer>
+
+
+    <script>
+        let followMe = document.getElementById('btn-follow-me')
+        let kerjaSama = document.getElementById('btn-kerja-sama')
+
+        followMe.addEventListener('click', function () {
+            // window.location.href = 'https://instagram/rizalspsp'
+            window.open('https://www.instagram.com/?hl=id', '_blank');
+        })
+
+        kerjaSama.addEventListener('click', function () {
+            // window.localStorage.href = 'https://wa.me/+6281324458398'
+            window.open('https://wa.me/+6281324458398')
+        })
+
+
+    </script>
+</body>
+
+</html>

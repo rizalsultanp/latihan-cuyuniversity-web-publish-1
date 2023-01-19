@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    background-color: #eaeaea50;
+    color: #1a2238;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    gap: 6px;
+    cursor: default;
+    transition: 300ms ease-in;
+    -webkit-transition: 300ms ease-in;
+    -moz-transition: 300ms ease-in;
+    -ms-transition: 300ms ease-in;
+    -o-transition: 300ms ease-in;
+}
+
+.logo-img {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.logo:hover {
+    color: #ff6a3d;
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+
+.btn-follow {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    background: #ff6a3d;
+    color: #eaeaea;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+}
+
+nav>ul {
+    display: flex;
+    padding: 15px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+li a:hover {
+    color: #ff6a3d;
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+
+}
+
+a {
+    font-weight: bold;
+    color: #1a2238;
+    text-decoration: none;
+    display: inline-block;
+    transition: 300ms ease-in;
+    -webkit-transition: 300ms ease-in;
+    -moz-transition: 300ms ease-in;
+    -ms-transition: 300ms ease-in;
+    -o-transition: 300ms ease-in;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.img-foto {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 10px;
+}
+
+.parallax {
+    height: 100vh;
+    background-image: url(assets/foto/2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #eaeaea;
+    padding: 20px;
+    font-size: 24px;
+    gap: 10px;
+    backdrop-filter: blur(3px);
+}
+
+.btn-kerja-sama {
+  text-align: center;
+  margin: 0;
+  border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    background: #ff6a3d;
+    color: #eaeaea;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+}
+
+.card-item {
+  
+    width: 25%;
+
+    padding: 20px;
+    backdrop-filter: blur(3px);
+    background-color: #f7f7f710;
+    color: #eaeaea;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-description {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    padding: 4px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #1a2238;
+    color: #eaeaea;
+}
+
+footer>.title {
+    font-size: 16px;
+
+}
+
+@media screen and (max-width: 500px) {
+
+    nav {
+        font-size: 20px;
+    }
+
+    a {
+        display: inline-block;
+        font-size: x-large;
+    }
+
+    .btn-follow {
+      margin: -20px 20px 10px auto;
+    }
+
+  .btn-follow{
+    position: relative;
+    margin: -40px 0;
+    bottom: 0;
+    right: 0;
+  }
+
+    .about {
+        padding: 10px;
+    }
+
+  .parallax{
+    height: 160vh;
+  }
+
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-item {
+        width: 100%;
+       min-height:200px;
+    max-height:400px;
+        padding: 15px;
+        backdrop-filter: none;
+        background-color: #1a223850;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    }
+
+    .btn-kerja-sama {
+        margin: 0;
+    }
+
+    .card-description {
+        letter-spacing: 2px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .intro {
+        margin-top: 20px;
+    }
+
+    .img-foto {
+        padding: 0;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
